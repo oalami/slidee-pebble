@@ -1,0 +1,17 @@
+{
+  "uuid": "bf928738-7ffb-44a0-a1b7-61309c1d69c8",
+  "shortName": "slidee_pebble",
+  "longName": "Slidee Pebble",
+  "companyName": "Firebase",
+  "versionCode": 1,
+  "versionLabel": "0.1",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
