@@ -5,25 +5,25 @@ static TextLayer *text_layer;
 static AppSync sync;
 static uint8_t sync_buffer[32];
 
-void out_sent_handler(DictionaryIterator *sent, void *context) {
+static void out_sent_handler(DictionaryIterator *sent, void *context) {
   APP_LOG(APP_LOG_LEVEL_DEBUG, "outgoing message was delivered");
    // outgoing message was delivered
  }
 
 
- void out_failed_handler(DictionaryIterator *failed, AppMessageResult reason, void *context) {
+ static void out_failed_handler(DictionaryIterator *failed, AppMessageResult reason, void *context) {
   APP_LOG(APP_LOG_LEVEL_DEBUG, "outgoing message failed");
    // outgoing message failed
  }
 
 
- void in_received_handler(DictionaryIterator *received, void *context) {
+ static void in_received_handler(DictionaryIterator *received, void *context) {
   APP_LOG(APP_LOG_LEVEL_DEBUG, "incoming message received");
    // incoming message received
  }
 
 
- void in_dropped_handler(AppMessageResult reason, void *context) {
+ static void in_dropped_handler(AppMessageResult reason, void *context) {
     APP_LOG(APP_LOG_LEVEL_DEBUG, "incoming message dropped");
 
    // incoming message dropped
